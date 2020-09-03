@@ -5,10 +5,10 @@ import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-detele-tema',
-  templateUrl: './detele-tema.component.html',
-  styleUrls: ['./detele-tema.component.css']
+  templateUrl: './delete-tema.component.html',
+  styleUrls: ['./delete-tema.component.css']
 })
-export class DeteleTemaComponent implements OnInit {
+export class DeleteTemaComponent implements OnInit {
 
   tema: Tema = new Tema()
 

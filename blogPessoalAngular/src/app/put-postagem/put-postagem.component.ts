@@ -13,7 +13,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 export class PutPostagemComponent implements OnInit {
 
   postagem: Postagem = new Postagem()
-  idPost: number  
+  idPostagem: number  
 
   tema: Tema = new Tema()
   listaTemas: Tema[]
@@ -26,11 +26,11 @@ export class PutPostagemComponent implements OnInit {
     private route: ActivatedRoute
   ) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
     window.scroll(0,0)
     
-    this.idPost = this.route.snapshot.params["id"]
-    this.findByIdPostagem(this.idPost)
+    this.idPostagem = this.route.snapshot.params["id"]
+    this.findByIdPostagem(this.idPostagem)
 
     
     this.findAllTemas()

@@ -4,11 +4,11 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { PostagemService } from './../service/postagem.service';
 
 @Component({
-  selector: 'app-detele-postagem',
-  templateUrl: './detele-postagem.component.html',
-  styleUrls: ['./detele-postagem.component.css']
+  selector: 'app-delete-postagem',
+  templateUrl: './delete-postagem.component.html',
+  styleUrls: ['./delete-postagem.component.css']
 })
-export class DetelePostagemComponent implements OnInit {
+export class DeletePostagemComponent implements OnInit {
   
   postagem: Postagem = new Postagem()
 
